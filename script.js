@@ -37,6 +37,15 @@ function selectOption(option) {
     // If Yes button is clicked
     if (option === 'yes') {
 
+        const sound = document.getElementById('yippiee-sound');
+        if (sound) {
+            sound.currentTime = 0;   // restart if clicked again
+            sound.volume = 0.5;
+            sound.play().catch(err => {
+                console.log("Audio failed:", err);
+            });
+        }
+        
         flashRainbowColors(function () {
 
             const fgif = document.getElementById('front-gif');
@@ -140,3 +149,4 @@ window.onload = function () {
         noBtn.addEventListener('mouseover', moveNoButtonRandom);
     }
 };
+
