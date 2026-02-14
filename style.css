@@ -1,0 +1,45 @@
+/* Center entire page using flexbox */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;   /* Horizontal center */
+    align-items: center;       /* Vertical center */
+    background: #eca1b6;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content container */
+#container {
+    text-align: center;
+}
+
+/* Question styling */
+#question {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #c51943;
+}
+
+/* General button styling */
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Yes button styling */
+#yes-button {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+/* No button styling */
+#no-button {
+    background-color: #6c757d;
+    color: white;
+}
